@@ -1,0 +1,27 @@
+{
+  "name": "@where-org/where-socket",
+  "version": "2.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "Masafumi Sasahara <masafumi@sashara.io> (https://github.com/masafumi-sasahara/)",
+  "homepage": "https://where-org.com/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/where-org/where-socket.git"
+  },
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "start": "node ./bin/where-socket.js ./config",
+    "dev": "node --watch ./bin/where-socket.js ./config"
+  },
+  "dependencies": {
+    "@where-org/where-common": "^2.0.1",
+    "nanoid": "^5.1.6",
+    "websocket": "^1.0.35"
+  },
+  "devDependencies": {
+    "@types/websocket": "^1.0.10"
+  }
+}
