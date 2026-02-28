@@ -1,7 +1,7 @@
 {
   "name": "@where-org/where-socket",
-  "version": "2.0.0",
-  "description": "",
+  "version": "2.0.1",
+  "description": "A WebSocket server driven by extensible modules",
   "license": "MIT",
   "author": "Masafumi Sasahara <masafumi@sashara.io> (https://github.com/masafumi-sasahara/)",
   "homepage": "https://where-org.com/",
@@ -13,9 +13,12 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "start": "node ./bin/where-socket.js ./config",
-    "dev": "node --watch ./bin/where-socket.js ./config"
+    "start": "NODE_ENV=$npm_config_mode node ./bin/where-socket.js ./config",
+    "dev": "NODE_ENV=$npm_config_mode node --watch ./bin/where-socket.js ./config"
   },
+  "keywords": [
+    "where-socket", "websocket", "ws"
+  ],
   "dependencies": {
     "@where-org/where-common": "^2.0.1",
     "nanoid": "^5.1.6",
